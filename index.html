@@ -5,10 +5,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Journey | Agencia de Viajes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
 </head>
 <body>
+  <!-- Sección 1 (Menu de navegación y portada) -->
   <header>
-    
+    <nav class="header-nav">
+      <div class="header-nav__container">
+          <a href="#hero" class="header-nav__link-logo-container">
+            <img class="header-nav__link-logo" src="logo-journey.svg" alt="Logo Company" width="140" height="32"/>
+          </a>
+          <label for="headerNavMenuIcon" class="header-nav__menu-label"><i class="bi bi-list"></i></label>
+          <input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-checkbox" />
+          <ul class="header-nav__menu-list">
+            <li class="header-nav__menu-item">
+              <a href="#service" class="header-nav__menu-link">Servicios</a>
+            </li>
+            <li class="header-nav__menu-item">
+              <a href="#destination" class="header-nav__menu-link">Destino</a>
+            </li>
+            <li class="header-nav__menu-item">
+              <a href="#booking" class="header-nav__menu-link">Cómo reservar</a>
+            </li>
+            <li class="header-nav__menu-item">
+              <a href="#testimonial" class="header-nav__menu-link">Testimonios</a>
+            </li>
+            <li class="header-nav__menu-item">
+              <a class="header-nav__menu-link header-nav__menu-link--active" href="#subscribe">Suscríbete</a>
+            </li>
+          </ul>
+      </div>
+    </nav>    
   </header>
+  <main>
+    <article class="hero" id="hero">
+      <div class="hero__container">
+        <section class="hero__info-container">
+          <h2 class="hero__info-subtitle">Los mejores destinos alrededor del mundo</h2>
+          <h1 class="hero__info-title">Viaja, disfruta y vive una vida nueva y plena</h1>    
+          <p class="hero__info-paragraph">
+            Elige tu destino favorito y comienza a planificar tus tan esperadas vacaciones. Reserva ahora tu viaje en Journey, ¡la mayor agencia de viajes de Latinoamérica!.
+          </p>
+          <a href="#" class="hero__info-link">Reservar</a>
+        </section>
+          <div class="hero__img-container">
+        <img src="img-hero.png" width="450" height="450" alt="Turista" class="hero__img-tourist">
+      </div>
+    </div>
+    </article>
+  <!-- Sección 2 (Servicios y Destino) - etiquetas temporales hechas por Carmen Urízar -->
+  <section id="service">
+    <h3>Categoría</h3>
+    <h2>Ofrecemos los mejores servicios</h2>
+  </section>   
+  <section id="destination">
+    <h3>Más vendidos</h3>
+    <h2>Principales destinos</h2>
+  </section>   
+  <!-- Sección 3 (Cómo reservar y Testimonios) - etiquetas temporales hechas por Carmen Urízar -->
+  <section id="booking">
+    <h3>Fácil y Rápido</h3>
+    <h2>Reserve su próximo viaje en 3 sencillos pasos</h2>
+  </section>  
+  <section id="testimonial">
+    <h3>Testimonios</h3>
+    <h2>Qué dice la gente de nosotros.</h2>
+  </section>  
+</main>
+<!-- Sección 4 (Suscríbete y footer) - etiquetas temporales hechas por Carmen Urízar -->
+<section id="subscribe">
+  <h2>Suscríbete para recibir información, últimas noticias y otras ofertas interesantes</h2>
+</section>  
+<footer>
+    <h5>copyright <i class="bi bi-c-circle"></i> 2022 Journey. Todos los derechos reservados.</h5>
+  </footer>
 </body>
 </html>
