@@ -197,17 +197,8 @@
 }
 
 
-.pt1 { 
+.service__container { 
 padding-top: 2.5rem;
-}
-
-.service__container {
-position: relative;
-width: 100%;
-padding-right: var(--bs-gutter-x, 1rem);
-padding-left: var(--bs-gutter-x, 1rem);
-margin-right: auto;
-margin-left: auto;
 }
 
 .service__info-container{
