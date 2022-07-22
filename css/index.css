@@ -6,6 +6,7 @@
   margin: 0;
   font-family: var(--secondary-font-family);
   overflow-x: hidden;
+  
 }
 
 .header{
@@ -202,7 +203,7 @@
 
 
 .service__container { 
-padding-top: 2.5rem;
+padding-top: 0.5rem;
 }
 
 .service__info-container{
@@ -222,7 +223,6 @@ text-align: center;
 .service__card {
   max-width: 1024px ;
   display:flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin:auto;
@@ -233,14 +233,12 @@ text-align: center;
   gap: 1rem;
   width: 200px;
   display: flex; 
-  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
   align-items:center;
   text-align: center;
   margin: 0;
   padding: 1rem;
-  
 
 }
 .service__card-title {
@@ -251,6 +249,80 @@ margin: 0;
 .service__card-paragraph {
   margin: 0;
 
+}
+
+
+.destination__container {
+  padding-top: 0.5rem;
+}
+
+.destination__info-container{
+  text-align: center;
+}
+
+.destination__info-subtitle{
+  color:#5E6282 ;
+  font-size: 1.15rem;
+}
+
+.destination__info-title{
+  font-size: 2.00rem;
+  width: 100%;
+}
+
+.destination__card{
+  max-width: 1024px ;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.destination__card-container{
+  gap: 1rem;
+  width: 270px;
+  display: flex; 
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  background-color: var(--secondary-header-color)
+ 
+}
+
+.destination-img {
+  border-top-left-radius: calc(1.5rem - 1px);
+  border-top-right-radius: calc(1.5rem - 1px);
+
+}
+
+.destination__card-info{
+cursor:pointer
+}
+
+.destination__card-place{
+ color: var(--primary-theme-color);
+ cursor:pointer:
+}
+
+
+.destination__card-price{
+  color: var(--primary-text-color)
+  cursor:pointer:
+}
+
+.destination__card-days{
+  
+}
+
+.destination__card-days-n{
+  
 }
 
 
