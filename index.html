@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Journey | Agencia de Viajes</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Secular+One&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Secular+One&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body class="body">
-  <!-- Sección 1 (Menu de navegación y portada) -->
+  <!-- Sección 1 -->
   <header class="header">
     <nav class="header-nav">
       <div class="header-nav__container">
           <a href="#hero" class="header-nav__link-logo-container">
-            <img class="header-nav__link-logo" src="logo-journey.svg" alt="Logo Company" width="128" height="32"/>
+            <img class="header-nav__link-logo" src="./img/logo-journey.svg" alt="Logo Company" width="128" height="32"/>
           </a>
           <label for="headerNavMenuIcon" class="header-nav__menu-label"><i class="bi bi-list"></i></label>
           <input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-checkbox"/>
@@ -39,35 +43,72 @@
             </li>
           </ul>
       </div>
-    </nav>    
+    </nav>
   </header>
   <main>
     <article class="hero" id="hero">
       <div class="hero__container">
         <section class="hero__info-container">
           <h2 class="hero__info-subtitle">Los mejores destinos alrededor del mundo</h2>
-          <h1 class="hero__info-title">Viaja, disfruta y vive una vida nueva y plena</h1>    
+          <h1 class="hero__info-title">Viaja, disfruta y vive una vida nueva y plena</h1>
           <p class="hero__info-paragraph">
-            Elige tu destino favorito y comienza a planificar tus tan esperadas vacaciones. Reserva ahora tu viaje en Journey, ¡la mayor agencia de viajes de Latinoamérica!.
+            Elige tu destino favorito y comienza a planificar tus tan esperadas vacaciones. Reserva ahora tu viaje en
+            Journey, ¡la mayor agencia de viajes de Latinoamérica!.
           </p>
           <div class="hero__info-link-container">
             <a href="#" class="hero__info-link">Reservar</a>
           </div>
         </section>
         <div class="hero__img-container">
-          <img src="img-hero.png" width="450" height="450" alt="Turista" class="hero__img-tourist">
+          <img src="./img/img-hero.png" width="300" height="300" alt="Turista" class="hero__img-tourist">
         </div>
-    </div>
+      </div>
     </article>
-  <!-- Sección 2 (Servicios y Destino) - etiquetas temporales hechas por Carmen Urízar -->
-  <section id="service">
-    <h3>Categoría</h3>
-    <h2>Ofrecemos los mejores servicios</h2>
-  </section>   
-  <section id="destination">
-    <h3>Más vendidos</h3>
-    <h2>Principales destinos</h2>
-  </section>   
+<!-- Sección 2 (Servicios y Destino) -->
+<section class="pt1" id="service">
+  <div class="service__container">
+    <div class="service__info-container">
+      <h5 class="service__info-subtitle">Categoría</h5>
+      <h2 class="service__info-title">Ofrecemos los mejores servicios</h2>
+    </div>
+
+    <div class="service__card">
+      <div class="service__card-container"> 
+        <img srcset="https://i.postimg.cc/NfCzGwNF/avion.png" width="75" alt="service">
+        <h4 class="service__card-title" >Vuelos</h4>
+        <p class="service__card-paragraph">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500</p>
+      </div>
+    
+      <div class="service__card-container">
+        <img srcset="https://i.postimg.cc/NfCzGwNF/avion.png" width="75" alt="service">
+        <h4 class="service__card-title" >Vuelos</h4>
+        <p class="service__card-paragraph">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500</p>
+      </div>
+
+      <div class="service__card-container">
+        <img srcset="https://i.postimg.cc/NfCzGwNF/avion.png" width="75" alt="service">
+        <h4 class="service__card-title" >Vuelos</h4>
+        <p class="service__card-paragraph">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500</p>
+      </div>
+
+      <div class="service__card-container">
+        <img srcset="https://i.postimg.cc/NfCzGwNF/avion.png" width="75" alt="service">
+        <h4 class="service__card-title" >Vuelos</h4>
+        <p class="service__card-paragraph">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el
+        texto de relleno estándar de las industrias desde el año 1500</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
+<section id="destination">
+  <h3>Más vendidos</h3>
+  <h2>Principales destinos</h2>
+</section> 
   <!-- Sección 3 (Cómo reservar y Testimonios) - etiquetas temporales hechas por Carmen Urízar -->
   <section id="booking">
     <h3>Fácil y Rápido</h3>
@@ -78,7 +119,7 @@
     <h2>Qué dice la gente de nosotros.</h2>
   </section>  
 </main>
-<!-- Sección 4 (Suscríbete y footer) - etiquetas temporales hechas por Carmen Urízar -->
+<!-- Sección 4 (Suscríbete y footer)  -->
 <section class="subscribe">
   <div class="subscribe__container">
     <h2 class="subscribe__container-secondary">Suscríbete para recibir información, últimas noticias y otras ofertas interesantes</h2>  
@@ -171,5 +212,9 @@
   </div>
   
 </footer> 
+
+    
+    
 </body>
+
 </html>
