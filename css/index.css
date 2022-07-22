@@ -296,3 +296,135 @@ margin: 0;
     background-color: var(--secondary-header-color);
   }
 }
+
+.subscribe__container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(223, 215, 249, 0.199);
+  border-radius: 129px 20px 20px 20px;
+  padding: 5rem 5rem;  
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  
+}
+
+.subscribe__container h2{
+  color:#5E6282;
+}
+
+.subscribe__container-email{  
+  border-radius: 0.75rem;
+  background-color: #fff;
+  color: #39425D;
+  padding: 1rem 1rem 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+}
+.subscribe__container-button{
+  margin-top: 1rem;
+  border-radius: 0.70rem;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #FF9560,#FF7D68);
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+.subscribe__container-button:hover{
+  padding: 1.1rem 2.1rem;
+  color: rgb(241, 19, 37);
+}
+footer{
+  width: 100%;
+  padding: 50px 0px;
+}
+.footer__supercontainer{
+  max-width: 1024px;
+  position: relative; 
+  margin: 0 auto;
+  padding-left: 1rem; 
+}
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */  
+  /* max-width: 1024px; */
+  margin: auto;   
+  gap: 1rem; 
+}
+
+.footer__container-box1 a{
+  margin-right: 1.8rem;
+  text-decoration: none;
+}
+
+.footer__container-box1 p{
+  max-width: 200px;
+  margin-top: 1.8rem;
+}
+.footer__container-box1 img{
+  margin-top: 1.3rem;
+}
+/* .footer__container-box2{  
+  max-width: 600px;
+  
+} */
+.footer__container-box2 ul{
+  list-style: none;
+  padding-left: 0;  
+}
+.footer__container-box2 li{
+  padding-top: 22px;
+}
+.footer__container-box2 a{
+  text-decoration: none;
+  color: black;    
+}
+.footer__container-box2 a:hover{
+  color: orange;   
+  
+}
+.footer__container-box h4{
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer__container-box3{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+  /* justify-content: center; */
+  
+}
+.footer__container-box4{
+  margin-top: 3rem;
+  text-align: center;
+  /* max-width: 1024px; */
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+/*   .footer__supercontainer{
+    padding-left: 1rem;
+    
+    
+  } */
+  .footer__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+  }  
+  .footer__container-box1 p{
+    /* width: 300px; */
+    /* margin-top: 1.8rem; */
+  }
+  .footer__container-box2{  
+    padding: 2rem;    
+  }
+}
+
+
+
+
