@@ -86,7 +86,7 @@
   position: relative;
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.25s;
+  transition: var(--primary-all-transitions);
   color: #212832;
 }
 
@@ -99,7 +99,7 @@
   border: 1.5px solid var(--secondary-theme-color);
   padding: 0.3rem 0.8rem;
   border-radius: 1rem;
-  transition: 0.3s;
+  transition: var(--primary-all-transitions);
 }
 
 .header-nav__menu-link--active:hover {
@@ -180,7 +180,7 @@
   box-shadow: 0 1.25rem 2.1875rem 0 rgb(241 165 1 / 15%);
   -webkit-box-shadow: 0 1.25rem 2.1875rem 0 rgb(241 165 1 / 15%);
   text-transform: uppercase;
-  transition: background-color 0.25s;
+  transition: var(--primary-all-transitions);
 }
 
 .hero__info-link:hover {
@@ -293,7 +293,6 @@ margin: 0;
   padding: 1rem;
   border-radius: 1.5rem;
   background-color: var(--secondary-header-color)
- 
 }
 
 .destination-img {
@@ -303,26 +302,26 @@ margin: 0;
 }
 
 .destination__card-info{
-cursor:pointer
+  cursor:pointer;
 }
 
 .destination__card-place{
- color: var(--primary-theme-color);
- cursor:pointer:
+  color: var(--primary-theme-color);
+  cursor:pointer;
 }
 
 
 .destination__card-price{
-  color: var(--primary-text-color)
-  cursor:pointer:
+  color: var(--primary-text-color);
+  cursor:pointer;
 }
 
 .destination__card-days{
-  
+  margin: 0;
 }
 
 .destination__card-days-n{
-  
+  margin: 0;
 }
 
 
@@ -344,13 +343,13 @@ cursor:pointer
     font-size: 1.15rem;
   }
   .hero__img-container {
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
   }
   
   .hero__img-tourist {
-    width: 450px;
-    height: 450px;
+    width: 500px;
+    height: 500px;
   }
   .hero__info-link-container {
     margin: 1rem 0;
@@ -359,3 +358,129 @@ cursor:pointer
     background-color: var(--secondary-header-color);
   }
 }
+
+.subscribe__container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgba(223, 215, 249, 0.237);
+  border-radius: 129px 20px 20px 20px;
+  padding: 5rem 5rem;  
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  
+}
+
+.subscribe__container h2{
+  color: var(--tertiary-theme-color);
+}
+
+.subscribe__container-email{  
+  border-radius: 5rem;
+  background-color: #fff;
+  color: var(--secondary-text-color);
+  padding: 1rem 1rem 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+.subscribe__container-button{
+  margin-top: 1rem;
+  border-radius: 5rem;
+  color: #fff;
+  border: none;
+  background-color: var(--secondary-theme-color);
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  transition: var(--primary-all-transitions);
+}
+.subscribe__container-button:hover{
+  background-color: var(--secondary-theme-color-shadow);
+}
+footer{
+  width: 100%;
+  padding: 50px 0px;
+}
+.footer__supercontainer{
+  max-width: 1024px;
+  position: relative; 
+  margin: 0 auto;
+  padding-left: 1rem; 
+  color: var(--primary-text-color);
+}
+.footer__container{
+  display: flex;
+  flex-direction: column;
+  margin: auto;   
+  gap: 1rem; 
+}
+
+.footer__container-box1 a{
+  margin-right: 1.8rem;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 1.8rem;
+  transition: var(--primary-all-transitions);
+}
+
+.footer__container-box1 a:hover{
+  color: var(--secondary-theme-color);
+}
+
+.footer__container-box1 p{
+  max-width: 200px;
+  margin-top: 1.8rem;
+}
+.footer__container-box1 img{
+  margin-top: 1.3rem;
+}
+.footer__container-box2 ul{
+  list-style: none;
+  padding-left: 0;  
+}
+.footer__container-box2 li{
+  padding-top: 22px;
+}
+.footer__container-box2 a{
+  text-decoration: none;
+  color: black;
+  transition: var(--primary-all-transitions);   
+}
+.footer__container-box2 a:hover{
+  color: orange;   
+  
+}
+.footer__container-box h4{
+  font-weight: 700;
+  font-size: 20px;
+}
+.footer__container-box3{
+  display: flex;
+  flex-direction: row;  
+  align-items: center;
+}
+.footer__container-box4{
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 854px) {
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+  }  
+
+  .footer__container-box2{  
+    padding: 2rem;    
+  }
+}
+
+
+
+
