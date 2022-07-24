@@ -1,5 +1,5 @@
 .header{
-  background-color: var(--primary-header-color);
+  background-color: var(--secondary-header-color);
   position: fixed;
   z-index: 25;
   top: 0;
@@ -108,9 +108,5 @@
     pointer-events: auto;
     flex-direction: row;
     gap: 2rem;
-  }
-
-  .header{
-    background-color: var(--secondary-header-color);
   }
 }

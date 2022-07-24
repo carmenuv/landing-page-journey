@@ -15,3 +15,15 @@
   font-family: var(--secondary-font-family);
   overflow-x: hidden;  
 }
+
+.main {
+  margin-top: 5rem;
+}
+
+@media (min-width: 854px) {
+  .main {
+    margin-top: 0;
+  }
+}
+  
+  
