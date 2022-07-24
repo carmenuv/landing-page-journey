@@ -1,0 +1,82 @@
+.destination__info-container{
+  text-align: center;
+}
+
+.destination__info-subtitle{
+  color:var(--secondary-text-color) ;
+  font-size: var(--primary-font-size-info-subtitle);
+  margin: 0;
+}
+
+.destination__info-title{
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: var(--primary-font-size-info-title);
+  width: 100%;
+  margin: 0;
+}
+
+.destination__card{
+  max-width: var(--max-width-container);
+  display:flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.destination__card-container{
+  gap: 1rem;
+  max-width: 270px;
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+  margin: 0;  
+  border-radius: var(--border-radius-box);
+  box-shadow: var(--primary-box-shadow);   
+  background-color: #fff;
+  transition: var(--primary-all-transitions);
+}
+
+.destination__card-container:hover {
+  transform: scale(1.02);
+}
+
+.destination-img {
+  width: 350px;
+  height: 230px;
+}
+
+.destination__card-info{
+  margin: 0;
+  cursor: pointer;
+}
+
+.destination__card-place{
+  cursor: pointer;
+  transition: var(--primary-all-transitions);
+}
+
+.destination__card-place:hover {
+  color: var(--primary-theme-color);
+}
+
+
+.destination__card-price{
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.destination__card-days{
+  padding-bottom: 1.5rem;
+  margin: 0;
+}
+
+.destination__card-days-n{
+  margin: 0;
+}

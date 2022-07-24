@@ -1,0 +1,62 @@
+.service__container { 
+  padding: var(--padding-section-container);
+  }
+  
+  .service__info-container{
+  text-align: center;
+  }
+  
+  .service__info-subtitle { 
+    color:var(--secondary-text-color) ;
+    font-size: var(--primary-font-size-info-subtitle);
+    margin: 0;
+  }
+  
+  .service__info-title {
+    font-family: var(--primary-font-family);
+    margin: 0;
+    color: var(--primary-text-color);
+    font-size: var(--primary-font-size-info-title);
+    width: 100%;
+  }
+  
+  .service__card {
+    max-width: 1024px ;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding: 2rem;
+  }
+  
+  .service__card-container{
+    gap: 1rem;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    text-align: center;
+    border-radius: var(--border-radius-box);
+    margin: 0;
+    padding: 2rem;
+    transition: var(--primary-all-transitions);
+  }
+  
+  .service__card-container:hover {
+    box-shadow: var(--primary-box-shadow);
+  }
+  
+  .service__card-title {
+  margin: 0;
+  
+  }
+  
+  .service__card-paragraph {
+    margin: 0;
+  }
+  
+  
+  .destination__container {
+    padding: var(--padding-section-container);
+  }
