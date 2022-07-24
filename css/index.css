@@ -593,6 +593,7 @@ h5 {
   margin: auto;
   overflow: hidden;
   padding: 0 20px;
+   border-radius: var(--border-radius-box);
 }
 
 .testimonials__container-title {
