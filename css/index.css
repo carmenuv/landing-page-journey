@@ -505,6 +505,154 @@ footer{
   }
 }
 
+/* Sección 3 (Cómo reservar y Testimonios) */
+.section-booking {
+  max-width: 1056px;
+  padding: 5rem 0;
+  margin: auto;
+}
+
+.booking__container {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.booking__col-1 {
+  max-width: 50%;
+  
+}
+
+.booking-col-1__container-title-steps {
+  gap: 2rem;
+}
+.booking-col-1__secondary-title {
+  margin: 0.5rem 0 0.5rem 0;
+  font-family: var(--secondary-font-family);
+  color: var(--secondary-text-color);
+  font-size: var(--secondary-font-size-info-title);
+}
+.booking-col-1__main-title {
+  margin-top: 0 0 0 0.5rem;
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: var(--primary-font-size-info-title);
+}
+
+.booking-col-1__container-steps {
+  display: flex;
+  margin-top: 0.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+.booking-col-1__container-img {
+  align-items: center;
+  margin: 0 0;  
+}
+.booking-col-1__img {
+  margin: 0.5rem 1rem 0 0;
+}
+
+.card-container {
+  max-width: 370px;
+  overflow: hidden;
+  background-color: rgba(223, 215, 249, 0.237);
+  border-radius: var(--border-radius-box);
+  padding-bottom: 2rem;
+  box-shadow: var(--primary-box-shadow); 
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;  
+}
+
+h5 {
+  align-content: center;
+}
+
+@media screen and (max-width:990px) {
+  .booking__container{
+    max-width: 100%;
+    flex-direction: column;
+    }
+  } 
+
+.testimonials{
+  margin: 0;
+  padding: 0;
+  padding: 40px 0;
+  color: #434343;
+  text-align: center;
+}
+.testimonials-container{
+  max-width: 1056px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.testimonials__container-title {
+  display: block;
+  text-align: center;
+}
+
+.testimonials__secondary-title {
+  font-family: var(--secondary-font-family);
+  color: var(--secondary-text-color);
+  font-size: var(--secondary-font-size-info-title);
+}
+
+.testimonials__main-title {
+  margin-top: 0 0 0 0.5rem;
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: var(--primary-font-size-info-title);
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+}
+
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background-color:  rgba(255, 222, 149, 0.24);
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
 
 
 
