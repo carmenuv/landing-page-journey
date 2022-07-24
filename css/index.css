@@ -389,8 +389,8 @@ margin: 0;
   position: relative;
   background-color: rgba(223, 215, 249, 0.237);
   border-radius: 129px 20px 20px 20px;
-  padding: 5rem 5rem;  
-  max-width: 800px;
+  padding: 2.3rem 2rem;  
+  max-width: var(--max-width-container);
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -503,37 +503,44 @@ footer{
   .footer__container-box2{  
     padding: 2rem;    
   }
+
+  .subscribe__container{
+    padding: 5rem 5rem;  
+    max-width: 800px;
+}
 }
 
 /* Sección 3 (Cómo reservar y Testimonios) */
 .section-booking {
-  max-width: 1056px;
-  padding: 5rem 0;
+  max-width: var(--max-width-container);
   margin: auto;
 }
 
 .booking__container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 0 1rem;
+  padding: var(--padding-section-container);
+  justify-content: center;
+  gap: 2rem;
 }
 
 .booking__col-1 {
-  max-width: 50%;
-  
+  margin: 0;
 }
 
 .booking-col-1__container-title-steps {
   gap: 2rem;
+  text-align: center;
 }
 .booking-col-1__secondary-title {
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0;
   font-family: var(--secondary-font-family);
   color: var(--secondary-text-color);
   font-size: var(--secondary-font-size-info-title);
 }
 .booking-col-1__main-title {
-  margin-top: 0 0 0 0.5rem;
+  margin-top: 0;
   font-family: var(--primary-font-family);
   color: var(--primary-text-color);
   font-size: var(--primary-font-size-info-title);
@@ -542,7 +549,7 @@ footer{
 .booking-col-1__container-steps {
   display: flex;
   margin-top: 0.5rem;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 .booking-col-1__container-img {
@@ -556,7 +563,7 @@ footer{
 .card-container {
   max-width: 370px;
   overflow: hidden;
-  background-color: rgba(223, 215, 249, 0.237);
+  background-color: #fff;
   border-radius: var(--border-radius-box);
   padding-bottom: 2rem;
   box-shadow: var(--primary-box-shadow); 
@@ -574,13 +581,6 @@ h5 {
   align-content: center;
 }
 
-@media screen and (max-width:990px) {
-  .booking__container{
-    max-width: 100%;
-    flex-direction: column;
-    }
-  } 
-
 .testimonials{
   margin: 0;
   padding: 0;
@@ -592,13 +592,13 @@ h5 {
   max-width: 1056px;
   margin: auto;
   overflow: hidden;
-  padding: 0 20px;
-   border-radius: var(--border-radius-box);
+  padding: var(--padding-section-container);
 }
 
 .testimonials__container-title {
   display: block;
   text-align: center;
+  margin: 0;
 }
 
 .testimonials__secondary-title {
@@ -608,7 +608,7 @@ h5 {
 }
 
 .testimonials__main-title {
-  margin-top: 0 0 0 0.5rem;
+  margin: 0;
   font-family: var(--primary-font-family);
   color: var(--primary-text-color);
   font-size: var(--primary-font-size-info-title);
@@ -616,20 +616,22 @@ h5 {
 
 .row{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;  
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0; 
 }
 
 .col{
   flex: 33.33%;
-  max-width: 33.33%;
   box-sizing: border-box;
-  padding: 15px;
-}
-.testimonial{
   background-color:  rgba(255, 222, 149, 0.24);
-  padding: 30px;
+  border-radius: var(--border-radius-box);
 }
+.testimonial{  
+  padding: 30px;  
+}
+
 .testimonial img{
   width: 100px;
   height: 100px;
@@ -640,20 +642,28 @@ h5 {
   margin: 20px 0;
 }
 
-@media screen and (max-width:960px) {
-.col{
-  flex: 100%;
-  max-width: 80%;
+@media (min-width: 854px) {
+
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+
+  .row {
+    margin: 1.5rem 0;
+  }
+
+  .booking__container{
+    max-width: 100%;
+    flex-direction: row;
+    gap: 2.5rem;
+    }
+  
+  .booking-col-1__container-title-steps {
+      text-align: left;
+  }
+
+  .row{
+    flex-direction: row;
+  }
 }
-}
-
-@media screen and (max-width:600px) {
-.col{
-  flex: 100%;
-  max-width: 100%;
-}
-}
-
-
-
-
